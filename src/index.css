@@ -13,6 +13,13 @@ html {
   background: linear-gradient(#2a2a29, #1c1c1c);
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
 h1 {
   color: #ffcc00;
   font-weight: 400;
@@ -35,4 +42,14 @@ input::file-selector-button {
 
 select {
   font-size: 1.25rem;;
+}
+
+a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  min-height: calc(100vh - (4rem));
 }

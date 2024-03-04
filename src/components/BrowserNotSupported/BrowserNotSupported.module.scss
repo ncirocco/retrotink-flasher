@@ -1,0 +1,16 @@
+.browserNotSupported {
+  li {
+    list-style: none;
+    justify-content: center;
+    display: flex;
+    gap: 2rem;
+
+    ul {
+      padding: 0;
+    }
+
+    img {
+      width: 2rem;
+    }
+  }
+}

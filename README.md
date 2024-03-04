@@ -1,30 +1,11 @@
-# React + TypeScript + Vite
+# RetroTINK Flasher
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This tool allows to flash RetroTINK devices using a [compatible browser](https://caniuse.com/web-serial).
 
-Currently, two official plugins are available:
+## Disclaimer
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a third party utility that is not maintained by the official RetroTINK team. This software comes with no warranties of any kind whatsoever. Use it at your own risk.
 
-## Expanding the ESLint configuration
+## References used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Thanks to the work from [rmull](https://github.com/rmull). The code from [Tinkup](https://github.com/rmull/tinkup) saved me a lot of reverse engineering time.

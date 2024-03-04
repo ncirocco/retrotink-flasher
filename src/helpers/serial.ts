@@ -55,9 +55,6 @@ export const decodeMessage = (bytes: Uint8Array): Message => {
     }
 
     if (!startOfHeaderFound) {
-      //   console.warn(`Bytes found before header. Ignoring... (${b})`);
-      //   console.warn(bytes);
-
       continue;
     }
 
@@ -74,7 +71,7 @@ export const decodeMessage = (bytes: Uint8Array): Message => {
   }
 
   const cmd = msgBytes[0];
-  const payload = new Uint8Array(msgBytes.slice(1, msgBytes.length - 2));
+  const payload = new Uint8Array(msgBytes.slice(1, msgBytes.length));
 
   return { cmd, payload };
 };
