@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html {
+  font-family: 'OpenSans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: #f0e7d5;
+  min-height: 100vh;
+  background: linear-gradient(#2a2a29, #1c1c1c);
+}
+
+h1 {
+  color: #ffcc00;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+button {
+  background-color: #ffcc00;
+  border: none;
+  font-size: 1.25rem;
+  padding: .5rem 1rem;
+}
+
+input::file-selector-button {
+  background-color: #ffcc00;
+  border: none;
+  font-size: 1rem;
+  padding: .25rem .5rem;
+}
+
+select {
+  font-size: 1.25rem;;
+}
