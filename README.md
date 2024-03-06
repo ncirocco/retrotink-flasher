@@ -1,6 +1,6 @@
 # RetroTINK Flasher
 
-This tool allows to flash RetroTINK devices using a [compatible browser](https://caniuse.com/web-serial).
+This [tool](https://retrotink-flasher.pages.dev) allows to flash RetroTINK devices using a [compatible browser](https://caniuse.com/web-serial).
 
 ## Disclaimer
 
