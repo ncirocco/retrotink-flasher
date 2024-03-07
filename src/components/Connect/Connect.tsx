@@ -12,8 +12,7 @@ const Connect = ({ onConnect }: Props) => {
     <div className={styles.connect}>
       <p>
         <span>⚠️</span> This is a third party utility that is not maintained by
-        the official RetroTINK team. This software is still on beta. Use at your
-        own risk. <span>⚠️</span>
+        the official RetroTINK team. Use at your own risk. <span>⚠️</span>
       </p>
       <p>
         Notice: Firmware updates erase saved profiles and reset the device to
