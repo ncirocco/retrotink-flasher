@@ -34,15 +34,20 @@ const App = () => {
           {status !== Status.waitingToConnect && device && (
             <>
               <p>Detected: {device}</p>
-              <LoadFirmwareFile onLoadedFile={setLines} />
+              {status !== Status.erasing && status !== Status.flashing && (
+                <>
+                  <LoadFirmwareFile device={device} onLoadedFile={setLines} />
+                  <div>
+                    <button
+                      onClick={updateFirmware}
+                      disabled={status !== Status.waitingStartFlashing}
+                    >
+                      Update Firmware
+                    </button>
+                  </div>
+                </>
+              )}
               <div>
-                <button
-                  onClick={updateFirmware}
-                  disabled={status !== Status.waitingStartFlashing}
-                >
-                  Update Firmware
-                </button>
-
                 {status === Status.erasing && (
                   <p>Erasing the previous firmware</p>
                 )}

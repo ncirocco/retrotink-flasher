@@ -45,7 +45,11 @@ const useRetrotink = () => {
 
   const setLines = useCallback((lines: string[]) => {
     linesRef.current = lines;
-    setStatus(Status.waitingStartFlashing);
+    setStatus(
+      lines.length > 0
+        ? Status.waitingStartFlashing
+        : Status.waitingFirmwareFile
+    );
   }, []);
 
   // This function handles how to behave when a message sent by the Retrotink is received
