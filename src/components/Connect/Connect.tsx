@@ -15,12 +15,12 @@ const Connect = ({ onConnect }: Props) => {
         the official RetroTINK team. Use at your own risk. <span>⚠️</span>
       </p>
       <p>
-        Press and hold Menu button while plugging the RetroTink into the PC to
-        enter flashing mode.
+        Press and hold the Menu button while plugging the RetroTink into the PC
+        to enter flashing mode.
       </p>
       <p>
-        Notice: Firmware updates erase saved profiles and reset the device to
-        default settings.
+        Notice: Applying firmware updates erases saved profiles and resets the
+        device to its default settings.
       </p>
       {isBrowserCompatible ? (
         <button onClick={onConnect}>Connect RetroTink</button>
