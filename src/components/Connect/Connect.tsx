@@ -15,8 +15,11 @@ const Connect = ({ onConnect }: Props) => {
         the official RetroTINK team. Use at your own risk. <span>⚠️</span>
       </p>
       <p>
-        Press and hold the Menu button while plugging the RetroTink into the PC
-        to enter flashing mode.
+        To enter flashing mode, press and hold the Menu button while connecting
+        the RetroTink to your PC.
+        <br />
+        After 2-3 seconds, release the button. The indicator light should turn
+        red, signaling that the device is in flashing mode.
       </p>
       <p>
         Notice: Applying firmware updates erases saved profiles and resets the

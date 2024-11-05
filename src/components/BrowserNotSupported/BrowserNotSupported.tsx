@@ -8,7 +8,16 @@ const BrowserNotSupported = () => (
   <div className={styles.browserNotSupported}>
     <p>
       <h2>
-        <span>⛔</span>This browser is not compatible.<span>⛔</span>
+        <span>⛔</span> This browser is not compatible since it doesn't support
+        the{" "}
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Serial API
+        </a>{" "}
+        <span>⛔</span>
       </h2>
       <p>Please use one of the following browsers:</p>
       <li>
